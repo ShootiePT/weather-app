@@ -1,6 +1,8 @@
 import mapView from '/js/view/mapView.js';
+import weatherService from '/js/service/weatherService.js';
 
-function init() {
+async function init() {
+  await weatherService.getWeatherByCity('aveiro');
   mapView.render();
 };
 
