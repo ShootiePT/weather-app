@@ -1,12 +1,12 @@
 {
-    "name": "film-spa",
+    "name": "weather-app",
     "version": "1.0.0",
-    "description": "Small SPA app using MVC pattern and history API",
+    "description": "Small weather app with API request",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "Code for All_",
+    "author": "José Rocha",
     "license": "ISC",
     "devDependencies": {
         "eslint": "^8.57.0",
