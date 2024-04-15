@@ -7,8 +7,8 @@ function render() {
   //search
   const item = document.createElement('div');
   item.className = `input-group mb-3 mt-3`;
-  item.innerHTML = `<input type="text" class="form-control" placeholder="Enter a city name" aria-label="Enter a city name" aria-describedby="button-addon2" id="city-name">
-                    <button class="btn btn-outline-secondary" type="button" id="btn-weather">Search</button>`;
+  item.innerHTML = `<input type="text" class="form-control box-sh" placeholder="Enter a city name" aria-label="Enter a city name" aria-describedby="button-addon2" id="city-name">
+                    <button class="btn btn-info" type="button" id="btn-weather">Search</button>`;
 
   container.appendChild(item);
 
@@ -54,7 +54,7 @@ function render() {
       <td>${result.main.temp} Cº</td>
       <td>${result.main.temp_max} Cº</td>
       <td>${result.main.temp_min} Cº</td>
-      <td><button class="btn btn-danger delete-btn">Delete</button></td>
+      <td><button class="btn btn btn-outline-danger delete-btn">Delete</button></td>
     `;
     tableBody.appendChild(newRow);
     document.querySelector('#weather-table').appendChild(tableBody);

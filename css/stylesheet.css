@@ -1,3 +1,5 @@
+@import url("background.css");
+
 a {
     text-decoration: none;
     color: inherit;
@@ -9,14 +11,24 @@ a {
     justify-content: space-evenly;
 }
 
-table {
+.table {
+    width: 90%;
     margin: auto;
-  }
+}
   
 th {
     text-transform: uppercase;
 }
 
-nav {
+.input-group {
+    width: 90%;
+    margin: auto;
+}
+
+.box-sh{
+    box-shadow: 0 0 10px; 
+}
+
+#btn-weather {
     box-shadow: 0 0 10px;
 }
