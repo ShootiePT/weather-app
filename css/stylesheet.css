@@ -8,3 +8,15 @@ a {
     display: flex;
     justify-content: space-evenly;
 }
+
+table {
+    margin: auto;
+  }
+  
+th {
+    text-transform: uppercase;
+}
+
+nav {
+    box-shadow: 0 0 10px;
+}
