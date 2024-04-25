@@ -1,9 +1,9 @@
-import cityForecastView from '/js/view/cityForecastView.js';
 import weatherService from '/js/service/weatherService.js';
+import cityView from '/js/view/cityView.js';
 
 async function init() {
   await weatherService.getWeatherByCity('aveiro');
-  cityForecastView.render();
+  cityView.render();
 };
 
 export default { init };

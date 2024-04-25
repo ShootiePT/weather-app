@@ -1,3 +1,4 @@
+import cityView from '/js/view/cityView.js';
 import weatherService from '/js/service/weatherService.js';
 
 function render() {
@@ -18,78 +19,64 @@ function render() {
   alertMessage.innerHTML = `<div class="alert alert-danger" role="alert">
                               The selected city was not found. Please enter a valid city.
                             </div>`;
-
   container.appendChild(alertMessage);
 
   const btnWeather = document.getElementById('btn-weather');
 
-  btnWeather.onclick = async (e) => {
-    e.preventDefault();
-    const cityInput = document.getElementById('city-name');
-    console.log(cityInput.value);
+  // Function to create city table
+  function createCityTable(cityWeather) {
+    const table = document.createElement('table');
+    table.id = 'weather-table';
+    table.className = 'table';
+    container.appendChild(table);
 
-    const result = await weatherService.getWeatherByCity(cityInput.value);
-    console.log(result);
+    const tableHeader = document.createElement('thead');
+    tableHeader.innerHTML = `
+      <tr class="tr-c">
+        <th>City Name</th>
+        <th></th>
+        <th>Weather</th>
+        <th>current Temp</th>
+        <th>Check</th>
+        <th>Delete</th>
+      </tr>
+    `;
+    table.appendChild(tableHeader);
 
-    // Check if city not found
-    if (result.cod === '404') {
-      showAlertMessage();
-      setTimeout(hideAlertMessage, 1800);
-      return;
-    }
-
-    // table header creation
-    if (!document.querySelector('#weather-table')) {
-      const table = document.createElement('table');
-      table.id = 'weather-table';
-      table.className = 'table';
-      container.appendChild(table);
-
-      const tableHeader = document.createElement('thead');
-      tableHeader.innerHTML = `
-        <tr class="tr-c">
-          <th>City Name</th>
-          <th></th>
-          <th>Weather</th>
-          <th>current Temp</th>
-          <th>Check</th>
-          <th>Delete</th>
-        </tr>
-      `;
-      table.appendChild(tableHeader);
-    }
-
-    // adding row
+    // Adding row for the city
     const tableBody = document.createElement('tbody');
     const newRow = document.createElement('tr');
     newRow.innerHTML = `
-      <td>${result.name}</td>
-      <td><img src="https://openweathermap.org/img/wn/${result.weather[0].icon}@2x.png" alt="image icon" style="width: 35px"></td>
-      <td>${result.weather[0].main}</td>
-      <td>${result.main.temp} Cº</td>
-      <td><button class="btn btn btn-outline-success success-btn">See More</button></td>
-      <td><button class="btn btn btn-outline-danger delete-btn">Delete</button></td>
+      <td>${cityWeather.name}</td>
+      <td><img src="https://openweathermap.org/img/wn/${cityWeather.weather[0].icon}.png" alt="weather icon" style="width: 35px"></td>
+      <td>${cityWeather.weather[0].main}</td>
+      <td>${cityWeather.main.temp} Cº</td>
+      <td><button class="btn btn-outline-success success-btn">See More</button></td>
+      <td><button class="btn btn-outline-danger delete-btn">Delete</button></td>
     `;
     tableBody.appendChild(newRow);
-    document.querySelector('#weather-table').appendChild(tableBody);
+    table.appendChild(tableBody);
 
-    // delete button
-    const deleteButtons = document.querySelectorAll('.delete-btn');
-    deleteButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const row = button.closest('tr');
-        row.remove();
+    // "See More" button click event
+    const seeMoreButtons = document.querySelectorAll('.success-btn');
+    seeMoreButtons.forEach(button => {
+      button.addEventListener('click', async () => {
+        const cityName = cityWeather.name;
+        cityView.render(cityName);
       });
     });
-  };
+  }
 
+  // Function to show alert message
   function showAlertMessage() {
-    document.getElementById('alert-message').classList.remove('d-none');
+    alertMessage.classList.remove('d-none');
   }
 
+  // Function to hide alert message
   function hideAlertMessage() {
-    document.getElementById('alert-message').classList.add('d-none');
+    alertMessage.classList.add('d-none');
   }
+
 }
 
 export default { render };
