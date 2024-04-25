@@ -1,4 +1,3 @@
-
 export default {
   home: {
     path: '/',
@@ -8,9 +7,9 @@ export default {
     path: '/cityforecast',
     controller: 'cityForecastController'
   },
-  films: {
-    path: '/films',
-    controller: 'filmController'
+  city: {
+    path: '/city',
+    controller: 'cityController'
   },
   map: {
     path: '/map',
