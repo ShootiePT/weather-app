@@ -1,6 +1,6 @@
 async function getWeatherByCity (city) {
     const params = {
-        APPID: '5692bbc5d78a6719d6e10682ffaebcfe',
+        APPID: 'apiKEY',
         q: city,
         units: 'metric'
     };
