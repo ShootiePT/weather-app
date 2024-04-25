@@ -8,7 +8,7 @@ function render() {
   const item = document.createElement('div');
   item.className = `input-group mb-3 mt-3 box-sh btn-weather`;
   item.innerHTML = `<input type="text" class="form-control" placeholder="Enter a city name" aria-label="Enter a city name" aria-describedby="button-addon2" id="city-name">
-                    <button class="btn btn-primary" type="button" id="btn-weather">Search</button>`;
+                    <button class="btn btn-outline-primary" type="button" id="btn-weather">Search</button>`;
   container.appendChild(item);
 
   // Alert message

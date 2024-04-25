@@ -4,9 +4,9 @@ export default {
     path: '/',
     controller: 'homeController'
   },
-  authors: {
+  cityforecast: {
     path: '/cityforecast',
-    controller: 'cityforecastController'
+    controller: 'cityForecastController'
   },
   films: {
     path: '/films',

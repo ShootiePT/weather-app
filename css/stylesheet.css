@@ -25,6 +25,7 @@ a {
   
 th {
     text-transform: uppercase;
+    background-color: #faf0dc !important;
 }
 
 .input-group {

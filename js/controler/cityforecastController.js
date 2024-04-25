@@ -1,4 +1,4 @@
-import mapView from '/js/view/mapView.js';
+import mapView from '/js/view/cityForecastView.js';
 import weatherService from '/js/service/weatherService.js';
 
 async function init() {
