@@ -117,15 +117,15 @@ function populateCityTable(cityWeather) {
     </tr>
     <tr>
       <td>Sunrise</td>
-      <td>${cityWeather.sys.sunrise}</td>
+      <td>${new Date(cityWeather.sys.sunrise *1000)}</td>
     </tr>
     <tr>
       <td>Sunset</td>
-      <td>${cityWeather.sys.sunset}</td>
+      <td>${new Date(cityWeather.sys.sunset * 1000)}</td>
     </tr>
     <tr>
       <td>Time Zone</td>
-      <td>${cityWeather.timezone}</td>
+      <td>${new Date(cityWeather.timezone).toLocaleString()}</td>
     </tr>
     <tr>
       <td>Wind</td>
