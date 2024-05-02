@@ -62,8 +62,8 @@ All tips and assistance are welcome, both in collaborating on the project and pr
 
 ## Screenshots
 
-<img scr="/resources/read1.PNG" alt="compare city">
-<img scr="/resources/read2.PNG" alt="detailed city">
+<img scr="/resources/cityCompare.jpg" alt="city Compare">
+<img scr="/resources/cityDetail.jpg" alt="city Detail">
 
 ## Contact
 
@@ -71,4 +71,5 @@ All tips and assistance are welcome, both in collaborating on the project and pr
 <div align="center">
   <a href="mailto:jose.f.rocha92@gmail.com" target="_blank"><img src="https://skillicons.dev/icons?i=gmail" alt="gmail"></a>
   <a href="https://www.linkedin.com/in/joseflrocha" target="_blank"><img src="https://skillicons.dev/icons?i=linkedin" alt="linkedIn"></a>
+  <a href="https://pinterest.pt/Goodies4Gamers" target="_blank"><img src="/resources/pintrest.png" alt="pintrest" width="48"></a>
 </div>
