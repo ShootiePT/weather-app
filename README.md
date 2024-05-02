@@ -16,6 +16,7 @@ At the moment, I'm working on this SPA project to test my frontend skills and ap
   <a href="https://www.javascript.com/" target="_blank"><img src="https://skillicons.dev/icons?i=javascript" alt="JavaScript"></a>
   <a href="https://html.com/" target="_blank"><img src="https://skillicons.dev/icons?i=html" alt="HTML"></a>
   <a href="https://github.com/ShootiePT" target="_blank"><img src="https://skillicons.dev/icons?i=css" alt="CSS"></a>
+  <a href="https://github.com/ShootiePT" target="_blank"><img src="https://skillicons.dev/icons?i=bootstrap" alt="bootstrap"></a>
 </div>
 
 ## Table of Contents
