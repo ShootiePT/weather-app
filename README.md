@@ -30,18 +30,16 @@ This app is used to simultaneously check multiple cities and view the weather in
 
 ## Features
 
-Done:
+### <h3>Done:</h3>
+- [x] Search bars.
+- [x] View the weather of multiple cities and present it in a table.
+- [x] View detailed information of a specific city.
 
-Search bars
-View the weather of multiple cities and present it in a table
-View detailed information of a specific city
-
-To implement:
-
-Presentation home page
-Comparison chart between cities
-Map API
-Contact page
+### <h3>To Implement:</h3>
+- [ ] Presentation home page.
+- [ ] Comparison chart between cities.
+- [ ] Map API.
+- [ ] Contact page.
 
 ## Usage
 Don't forget to include an API key to test the app.
@@ -64,8 +62,8 @@ All tips and assistance are welcome, both in collaborating on the project and pr
 
 ## Screenshots
 
-<img scr="/resources/read1">
-<img scr="/resources/read2">
+<img scr="/resources/read1.PNG" alt="compare city">
+<img scr="/resources/read2.PNG" alt="detailed city">
 
 ## Contact
 
