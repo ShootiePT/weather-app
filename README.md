@@ -62,15 +62,16 @@ All tips and assistance are welcome, both in collaborating on the project and pr
 
 ## Screenshots
 
-<div style="text-align: center;">
-  <div style="display: inline-block; width: 48%;">
-    <img src="resources/cityDetail.jpg" alt="city Detail" width="100%">
-  </div>
-  <div style="display: inline-block; width: 48%;">
-    <img src="resources/cityCompare.jpg" alt="city Compare" width="100%">
-  </div>
-</div>
-
+<table>
+  <tr>
+    <td align="center">
+      <img src="resources/cityDetail.jpg" alt="city Detail" width="100%">
+    </td>
+    <td align="center">
+      <img src="resources/cityCompare.jpg" alt="city Compare" width="100%">
+    </td>
+  </tr>
+</table>
 
 ## Contact
 
