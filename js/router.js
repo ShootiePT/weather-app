@@ -10,7 +10,7 @@ function setCurrentRoute({ path, controller }) {
 async function launchController(controllerName) {
   console.log("this is controller " + controllerName);
 
-  const module = await import(`./controler/${controllerName}.js`);
+  const module = await import(`./controlLer/${controllerName}.js`);
   console.log(module);
   module.default.init();
 }
